@@ -22,13 +22,13 @@ Proses ini diotomatisasi menggunakan Apache Airflow yang memungkinkan penjadwala
 
 │ └── google_analytics_etl.py
 
-├── docker-compose.yml
+├── docker-compose.yaml
 
 └── README.md
 
 - `app/`: Folder ini berisi semua script Python untuk ekstraksi, transformasi, dan loading data.
 - `dags/`: Folder ini berisi DAG Airflow yang mendefinisikan alur kerja ETL.
-- `docker-compose.yml`: File ini digunakan untuk menjalankan layanan Airflow, PostgreSQL, dan Redis menggunakan Docker Compose.
+- `docker-compose.yaml`: File ini digunakan untuk menjalankan layanan Airflow, PostgreSQL, dan Redis menggunakan Docker Compose.
 - `README.md`: Dokumentasi proyek.
 
 ## Prerequisites
