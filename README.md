@@ -9,20 +9,26 @@ Proses ini diotomatisasi menggunakan Apache Airflow yang memungkinkan penjadwala
 ## Project Structure
 .
 ├── app/
+
 │ ├── init.py
+
 │ ├── Extract_data.py
+
 │ ├── Transform_data.py
+
 │ └── Load_data.py0
+
 ├── dags/
+
 │ └── google_analytics_etl.py
+
 ├── docker-compose.yml
+
 └── README.md
 
 - `app/`: Folder ini berisi semua script Python untuk ekstraksi, transformasi, dan loading data.
 - `dags/`: Folder ini berisi DAG Airflow yang mendefinisikan alur kerja ETL.
-- `Dockerfile`: Digunakan untuk membangun image Docker yang diperlukan.
 - `docker-compose.yml`: File ini digunakan untuk menjalankan layanan Airflow, PostgreSQL, dan Redis menggunakan Docker Compose.
-- `requirements.txt`: Daftar dependensi Python yang diperlukan untuk menjalankan proyek ini.
 - `README.md`: Dokumentasi proyek.
 
 ## Prerequisites
