@@ -1,0 +1,4 @@
+airflow.cfg
+config/
+logs/
+plugins/
