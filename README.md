@@ -53,7 +53,7 @@ Proses ini diotomatisasi menggunakan Apache Airflow yang memungkinkan penjadwala
 2. **Build and Start Services**:
     Pastikan Anda berada di direktori proyek, kemudian jalankan perintah berikut untuk membangun dan menjalankan layanan Airflow, PostgreSQL, dan Redis:
     ```bash
-    docker-compose up --build
+    docker-compose up -d
     ```
 
 3. **Access Airflow Web UI**:
@@ -61,7 +61,14 @@ Proses ini diotomatisasi menggunakan Apache Airflow yang memungkinkan penjadwala
     ```
     http://localhost:8080
     ```
-    Gunakan username dan password default `airflow` untuk masuk.
+    Gunakan username dan password yang sesuai untuk masuk.
+   
+4. **Access Pgadmin4 Web UI**:
+    Setelah layanan berjalan, Anda dapat mengakses UI web Pgadmin4 di:
+    ```
+    http://localhost:8585
+    ```
+    Gunakan username dan password yang sesuai untuk masuk.
 
 ## Running the ETL Process
 
@@ -84,19 +91,19 @@ Setelah proses ETL selesai, data yang telah ditransformasi akan dimuat ke dalam 
 Anda dapat memverifikasi data yang dimuat dengan mengakses database PostgreSQL melalui pgAdmin atau klien SQL lainnya.
 
 - login airflow
-![Architecture Overview](./Images/airflow_1.png)
+![Architecture Overview](./images/airflow_1.png)
 
 - menu airflow
-![Architecture Overview](./Images/airflow_2.png)
+![Architecture Overview](./images/airflow_2.png)
 
 - success running airflow
-![Architecture Overview](./Images/airflow_3.png)
+![Architecture Overview](./images/airflow_3.png)
 
 - DAG airflow
-![Architecture Overview](./Images/airflow_4.png)
+![Architecture Overview](./images/airflow_4.png)
 
 - output data in database with postgreSQL
-![Architecture Overview](./Images/database.png)
+![Architecture Overview](./images/database.png)
 
 ## Error Handling
 
