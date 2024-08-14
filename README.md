@@ -46,8 +46,7 @@ Proses ini diotomatisasi menggunakan Apache Airflow yang memungkinkan penjadwala
 
 1. **Clone the Repository**:
     ```bash
-    git clone https://github.com/username/project-name.git
-    cd project-name
+    git clone https://github.com/Ajied21/ETL_with_Python_Airflow_Dibimbing.id.git
     ```
 
 2. **Build and Start Services**:
