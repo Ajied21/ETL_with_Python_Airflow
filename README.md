@@ -10,17 +10,24 @@ Proses ini diotomatisasi menggunakan Apache Airflow yang memungkinkan penjadwala
 
 .
 ├── app/
-│ ├── init.py
-│ ├── Extract_data.py
-│ ├── Transform_data.py
-│ └── Load_data.py
-├── dags/
-│ └── google_analytics_etl.py
-├── Dockerfile
-├── docker-compose.yml
-├── requirements.txt
-└── README.md
 
+│ ├── init.py
+
+│ ├── Extract_data.py
+
+│ ├── Transform_data.py
+
+│ └── Load_data.py
+
+├── dags/
+
+│ └── google_analytics_etl.py
+
+├── Dockerfile
+
+├── docker-compose.yml
+
+└── README.md
 
 - `app/`: Folder ini berisi semua script Python untuk ekstraksi, transformasi, dan loading data.
 - `dags/`: Folder ini berisi DAG Airflow yang mendefinisikan alur kerja ETL.
