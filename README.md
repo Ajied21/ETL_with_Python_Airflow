@@ -20,7 +20,7 @@ Proses ini diotomatisasi menggunakan Apache Airflow yang memungkinkan penjadwala
 
 ├── dags/
 
-│ └── google_analytics_etl.py
+│ └── google_analytics_data_etl.py
 
 ├── docker-compose.yaml
 
