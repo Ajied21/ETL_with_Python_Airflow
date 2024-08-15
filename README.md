@@ -10,7 +10,7 @@ Proses ini diotomatisasi menggunakan Apache Airflow yang memungkinkan penjadwala
 .
 ├── app/
 
-│ ├── init.py
+│ ├── __init__.py
 
 │ ├── Extract_data.py
 
