@@ -16,7 +16,7 @@ Proses ini diotomatisasi menggunakan Apache Airflow yang memungkinkan penjadwala
 
 │ ├── Transform_data.py
 
-│ └── Load_data.py0
+│ └── Load_data.py
 
 ├── dags/
 
